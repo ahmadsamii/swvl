@@ -5,11 +5,11 @@
   "description": "swvl assignment",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/ahmadsamii/swvl"
   },
-  "author": "Ahmad Raza",
+  "author": "Ahmad Raza (https://www.linkedin.com/in/ahmad-ali-raza)",
   "contributors": [
-    "Ahmad Raza (https://bitbucket.com/ahmadaliraza)"
+    "Ahmad Raza (https://www.linkedin.com/in/ahmad-ali-raza)"
   ],
   "scripts": {
     "start": "node .",

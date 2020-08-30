@@ -1,7 +1,14 @@
 {
   "name": "city-target-web",
   "version": "0.0.1",
-  "author": "Ionic Framework",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahmadsamii/swvl"
+  },
+  "author": "Ahmad Raza (https://www.linkedin.com/in/ahmad-ali-raza)",
+  "contributors": [
+    "Ahmad Raza (https://www.linkedin.com/in/ahmad-ali-raza)"
+  ],
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
