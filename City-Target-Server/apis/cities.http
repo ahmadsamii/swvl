@@ -1,0 +1,12 @@
+# GET Citites
+get http://localhost:3000/api/city
+
+
+
+# Add City
+POST http://localhost:3000/api/city
+Content-Type: application/json
+
+{
+    "name" : "My City 1"
+}

@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-back-button [defaultHref]="'/tabs/cities'"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Add Target</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-row>
+    <ion-col size="6" offset="3" size-xs="12" offset-xs="0">
+      <ion-card>
+        <form name="targetForm" (ngSubmit)="targetForm.form.valid && saveTarget()" #targetForm="ngForm" novalidate>
+
+          <ion-card-header>
+            <ion-card-title>
+              Add Zone
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content class="ion-no-padding">
+
+            <ion-row>
+              <ion-col size-xs="12" size-sm="6" size-md="8" size-lg="9">
+
+                <ion-item color="none" lines="none">
+                  <ion-label position="floating" color="medium">Name</ion-label>
+                  <ion-input type="text" [(ngModel)]="newTarget.name" name="cityname"></ion-input>
+                </ion-item>
+
+
+                <ion-item color="none" lines="none">
+                  <ion-label position="floating" color="medium">Promo Ratio</ion-label>
+
+                  <ion-select [(ngModel)]="newTarget.promo_ratio" placeholder="Promo Ratio" name="promoratio">
+                    <ion-select-option [value]="rato" *ngFor="let ratio of ratioOptions">{{ratio}}</ion-select-option>
+                  </ion-select>
+
+                </ion-item>
+
+                <ion-item color="none" lines="none">
+                  <ion-label position="floating" color="medium">ATF</ion-label>
+                  <ion-input type="number" [(ngModel)]="newTarget.atf" name="atf"></ion-input>
+                </ion-item>
+
+                <ion-item color="none" lines="none">
+                  <ion-label position="floating" color="medium">Booking</ion-label>
+                  <ion-input type="number" [(ngModel)]="newTarget.booking" name="booking"></ion-input>
+                </ion-item>
+
+              </ion-col>
+
+              <ion-col size="12" class="text-center" center>
+                <ion-button type="submit">
+                  Save
+                </ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </form>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

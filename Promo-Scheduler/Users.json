@@ -1,0 +1,49 @@
+{
+    "data": [
+        {
+            "user_id": 1001,
+            "user_city": "Cairo",
+            "user_segment": "HV"
+        },
+        {
+            "user_id": 1002,
+            "user_city": "Cairo",
+            "user_segment": "MV"
+        },
+        {
+            "user_id": 1003,
+            "user_city": "Cairo",
+            "user_segment": "LV"
+        },
+        {
+            "user_id": 1004,
+            "user_city": "Nairobi",
+            "user_segment": "HV"
+        },
+        {
+            "user_id": 1005,
+            "user_city": "Nairobi",
+            "user_segment": "MV"
+        },
+        {
+            "user_id": 1006,
+            "user_city": "Nairobi",
+            "user_segment": "LV"
+        },
+        {
+            "user_id": 1007,
+            "user_city": "Islamabad",
+            "user_segment": "HV"
+        },
+        {
+            "user_id": 1008,
+            "user_city": "Islamabad",
+            "user_segment": "MV"
+        },
+        {
+            "user_id": 1009,
+            "user_city": "Islamabad",
+            "user_segment": "LV"
+        }
+    ]
+}

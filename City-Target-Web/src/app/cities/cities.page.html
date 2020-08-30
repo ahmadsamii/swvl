@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Cities</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear" (click)="loadCities()">
+        <ion-icon name="refresh-outline"></ion-icon>
+      </ion-button>
+
+      <ion-button fill="clear" [routerLink]="['/tabs/cities/add']">
+        <ion-icon name="add-outline"></ion-icon>
+      </ion-button>
+
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid fixed>
+    <ion-row>
+      <p class="text-center" *ngIf="isLoading">
+        <ion-spinner name="dots" color="tertiary"></ion-spinner>
+      </p>
+
+      <p class="text-center" *ngIf="!isLoading && !cities.length">
+        <ion-label>No cities added</ion-label>
+      </p>
+
+      <ion-col size-md="3" size-lg="3" size-xs="12" size-sm="4" *ngFor="let s of cities">
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle [routerLink]="['/tabs/cities', s._id, 'targets']">
+              <ion-label color="tertiary">
+                <h4>
+                  {{s.name}}
+                </h4>
+                <p>
+                  <b>Promo Ratio:</b> {{s.promo_ratio}}
+                </p>
+                <p>
+                  <b>ATF:</b> {{s.atf}}
+                </p>
+                <p>
+                  <b>Booking:</b> {{s.booking}}
+                </p>
+              </ion-label>
+            </ion-card-subtitle>
+            <ion-card-subtitle class="text-center">
+
+              <ion-buttons expand="block">
+
+                <ion-button color="primary" fill="clear" color="danger" mode="ios" (click)="deleteCity(s)">
+                  Delete
+                </ion-button>
+
+              </ion-buttons>
+
+            </ion-card-subtitle>
+
+          </ion-card-header>
+
+        </ion-card>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
