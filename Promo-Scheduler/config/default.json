@@ -7,5 +7,5 @@
         "dbName": "PromoBackups"
     },
     "promoServiceUrl": "http://127.0.0.1:3020",
-    "userDataFile":"/Users/ahmadraza/Work/Personal/swvl/swvl/Promo-Scheduler/Users.json"
+    "userDataFile":"./Users.json"
 }

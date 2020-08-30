@@ -21,7 +21,7 @@ This module is a full stack module built using MEAN stack. It manipulates the ci
 
 
 #### `Promo Scheduler` ####
-This is just a mongodb script that fetches the user ideal promos from Promo Module service against the provided data and populates the collection in Core Database with results.
+This is just a bash script which runs the Node script to fetch the user ideal promos from Promo Module service against the provided data and populates the collection in Core Database with results.
 
 ## Deployments ##
 The respecive modules are configured to be containerized and run as standalone services. 
